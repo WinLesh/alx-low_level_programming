@@ -9,15 +9,15 @@ int main(void)
 	int a;
 	int b = 0;
 
-	while (b <= 9)
+	while (a <= 9)
 	{
-		a = 0;
-		while (a <= 9)
+		b = 0;
+		while (b <= 9)
 		{
-			if (b != a && b < a)
+			if (a != b && a < b)
 			{
-				putchar(a + '0');
-			       	putchar(b + '0');
+				putchar(a + 48);
+			       	putchar(b + 48);
 
 				if (a + b != 17)
 				{
