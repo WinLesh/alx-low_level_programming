@@ -7,29 +7,23 @@
 int main(void)
 {
 	int a;
-	int b = 0;
+	int b;
 
-	while (a <= 9)
+	for (a = 0; a <= 9; a++)
 	{
-		b = 0;
-		while (b <= 9)
+		for (b = a + 1; b <= 9; b++)
 		{
-			if (a != b && a < b)
-			{
-				putchar(a + 48);
-			       	putchar(b + 48);
+			putchar(a + '0');
+			putchar(b + '0');
 
-				if (a + b != 17)
-				{
-					putchar(',');
-					putchar(' ');
-				}
+			if (a < 8)
+			{
+				putchar(',');
+				putchar(' ');
 			}
-			a++;
 		}
-		b++;
 	}
-putchar('\n');
+	putchar('\n');
 
 return (0);
 }
