@@ -16,7 +16,7 @@ int main(void)
 				putchar(j);
 				putchar(k);
 				putchar(l);
-				if (c == 7 && b == 8 && a == 9)
+				if (j == 7 && k == 8 && l == 9)
 				{
 				}
 				else
