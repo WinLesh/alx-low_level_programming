@@ -1,58 +1,17 @@
-
-
 #include <stdio.h>
-
-
-
 /**
- *
- *  * main - Entry point
- *
- *   *
- *
- *    * Description: print all aplhabet letters
- *
- *     *
- *
- *      * Return: Always 0 (Success)
- *
- *      */
-
-
-
+ * main - Entry point
+ * It print alphabets in lower case
+ * Return: Always 0
+ */
 int main(void)
-
 {
+	char LowerCase;
 
-		char ch = 'a';
-
-
-
-			while (ch <= 'z')
-
-					{
-
-								putchar(ch);
-
-										++ch;
-
-											}
-
-				putchar('\n');
-
-
-
-					return (0);
-
+	for (LowerCase = 'a'; LowerCase <= 'z'; LowerCase++;)
+	{
+		putchar(LowerCase);
+	}
+	putchar('\n');
+	return (0);
 }
-
-#include <stdio.h>
-
-
-*
- *
- *  * main - Entry point
- *
- *   *
- *
-ei *    * Description: print all aplhabet 
