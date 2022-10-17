@@ -18,15 +18,16 @@ int main(void)
 				putchar(j);
 				putchar(k);
 				putchar(l);
+
 				if (j == 7 && k == 8 && l == 9)
 				{
 				}
-				else
-				{
-					putchar(",");
-					putchar(" ");
+					else
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
-			}
 	putchar("\n");
 
 	return (0);
