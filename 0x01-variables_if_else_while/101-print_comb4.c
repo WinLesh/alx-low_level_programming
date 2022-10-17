@@ -12,8 +12,8 @@ int main(void)
 	int l;
 
 	for (j = 0; j <= 7; j++)
-		for (k = j + 1; k <= 8; k++)
-			for (l = k + 1; l <= 9; l++)
+		for (k = j+1; k <= 8; k++)
+			for (l = k+1; l <= 9; l++)
 			{
 				putchar(j);
 				putchar(k);
