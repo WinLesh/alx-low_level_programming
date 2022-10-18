@@ -10,7 +10,7 @@ int main(void)
 	char bc[] = "_putchar";
 	int a;
 
-	for (a = 0; bc < 8; ++a)
+	for (a = 0; a < 8; ++a)
 
 		_putchar(bc[a]);
 	_putchar('\n');
