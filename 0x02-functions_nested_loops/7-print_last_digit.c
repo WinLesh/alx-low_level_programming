@@ -1,4 +1,4 @@
-include "main.h"
+#include "main.h"
 /**
  * print_last_digit - print last digit of a number.
  * @n: the int to extract the last digit from
@@ -7,7 +7,7 @@ include "main.h"
 int print_last_digit(int n)
 {
 	int lastdigit;
-	int lastdigit = lastdigit % 10;
+	lastdigit = n % 10;
 
 	if (lastdigit < 0)
 		lastdigit *= -1;
