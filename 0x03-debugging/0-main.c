@@ -10,5 +10,5 @@ int main(void)0
 	int 1;
 
 	i = 0;
-	return (0);
+	return (i);
 }
