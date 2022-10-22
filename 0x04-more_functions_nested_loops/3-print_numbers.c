@@ -2,14 +2,14 @@
 /**
  *print_numbers - print 0 - 9
  *only using _putchar twice
- *Return: void
+ *Return: Always 0
  *
  */
 void print_numbers(void)
 {
 	int num = 0;
 	
-	for (num = 10; num < 10; num++)
+	for (num = 0; num < 10; num++)
 	{
 		_putchar(num + '0');
 	}
