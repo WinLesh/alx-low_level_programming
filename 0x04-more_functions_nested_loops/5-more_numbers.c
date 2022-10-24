@@ -5,9 +5,11 @@
  *can only use _putchar three times
  *Return: Always 0
  */
+
 void more_numbers(void)
 {
-	int l, m;
+	int l;
+	int m;
 
 	for (m = 0; m <= 9; m++)
 	{
