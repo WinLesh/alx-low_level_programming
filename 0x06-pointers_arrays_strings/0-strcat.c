@@ -13,13 +13,15 @@
 
 char *strcat(char *dest, const char *src)
 {
-	int i = 0;
+	int i, len;
+
+	i = 0;
 
 	while (dest[i] != '\0')
 	{
 		i++;
 	}
-	int len = 0;
+	len = 0;
 
 	while (src[len] != '\0')
 	{
