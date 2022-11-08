@@ -20,7 +20,7 @@ unsigned int _strspn(char *s, char *accept)
 				targetmatches++;
 				break;
 			}
-			if (accept[b + 1] == '\0' && s[a] != accept[b])
+			else if (accept[b + 1] == '\0' && s[a] != accept[b])
 				return (targetmatches);/*return if idx doesn't match*/
 		}
 		a++;
