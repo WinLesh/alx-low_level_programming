@@ -2,11 +2,11 @@
 /**
  * print_chessboard - Prints a chessboard.
  * @a: The chessboard to be printed.
- * 
+ * Return: no return'
  */
 void print_chessboard(char (*a)[8])
 {
-	int i, m = 0;
+	unsigned int i, m = 0;
 
 	for (i = 0; i < 64; i++)
 	{
