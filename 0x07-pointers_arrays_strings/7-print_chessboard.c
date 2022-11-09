@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_chessboard - prints a chessboard.
  * @a: inputs the pointer
@@ -15,7 +16,7 @@ void print_chessboard(char (*a)[8])
 			b = c;
 			_putchar('\n');
 		}
-			_putchar(a[c / 8][c - b]);
+		_putchar(a[c / 8][c - b]);
 	}
 	_putchar('\n');
 }
