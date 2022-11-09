@@ -13,7 +13,6 @@ void print_diagsums(int *a, int size)
 
 	a1 = 0;
 	a2 = 0;
-	
 	for (b = 0; b < size; b++)
 	{
 		a1 += a[(size * b) + b];
