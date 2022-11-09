@@ -2,18 +2,23 @@
 /**
  * print_chessboard - Prints a chessboard.
  * @a: The chessboard to be printed.
+ *
  */
-void print_chessboard(char (*a)[8])
+void print_diagsums(int *a, int size)
 {
-	int i;
-	int j;
+	int index, sum1 = 0, sum2 = 0;
 
-	for (i = 0; i < 8; i++)
+	for (index = 0; index < size; index++)
 	{
-		for (j = 0; j < 8; j++)
-		{
-			_putchar(a[i][j]);
-		}
-		_putchar('\n');
+		sum1 += a[index];
+		a += size;
 	}
+
+	a -= size;
+	for (index = 0; index < size; index++)
+	{
+		sum2 += a[index];
+		a -= size;
+	}
+	printf("%d, %d\n", sum1, sum2);
 }
