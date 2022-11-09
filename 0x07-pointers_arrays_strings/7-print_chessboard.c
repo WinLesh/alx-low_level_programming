@@ -1,14 +1,14 @@
-#include"main.h"
+#include "main.h"
 /**
- * print_chessboard - Prints a chessboard.
- * @a: The chessboard to be printed.
+ * print_chessboard - prints a chessboard.
+ * @a: inputs the pointer
  * Return : Nothing
  */
 void print_chessboard(char (*a)[8])
 {
 	unsigned int c, b = 0;
 
-	for (c = 0; c < 8; c++)
+	for (c = 0; c < 64; c++)
 	{
 		if (c % 8 == 0 && c != 0)
 		{
