@@ -2,20 +2,18 @@
 /**
  * print_chessboard - Prints a chessboard.
  * @a: The chessboard to be printed.
- * Return: no return'
  */
 void print_chessboard(char (*a)[8])
 {
-	unsigned int i, m = 0;
+	int row;
+	int column;
 
-	for (i = 0; i < 64; i++)
+	for (row = 0; row < 8; row++)
 	{
-		if (i % 8 == 0 && i != 0)
+		for (column = 0; column < 8; column++)
 		{
-			m = i;
-			_putchar('\n');
+			_putchar(a[row][column]);
 		}
-		_putchar(a[i / 8][i - m]);
+		_putchar('\n');
 	}
-	_putchar('\n');
 }
