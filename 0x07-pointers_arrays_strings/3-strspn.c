@@ -8,22 +8,22 @@
  */
 unsigned int _strspn(char *s, char *accept)
 {
-	int a = 0, b;
-	int targetmatches = 0;
+	unsigned int bt = 0;
+	int num;
 
-	while (s[a] != '\0') /*iterate through string*/
+	while (*s)
 	{
-		for (b = 0; accept[b] != '\0'; b++) /*iterate through target*/
+		for (num = 0; accept[num]; num++)
 		{
-			if (s[a] == accept[b]) /*record & break at first match*/
+			if (*s == accept[num])
 			{
-				targetmatches++;
+				bt++;
 				break;
 			}
-			else if (accept[b + 1] == '\0' && s[a] != accept[b])
-				return (targetmatches);/*return if idx doesn't match*/
+			else if (accept[num + 1] == '\0')
+				return (bt);
 		}
-		a++;
+		s++
 	}
-	return (targetmatches); /* return num if all match till end */
+	return (bt);
 }
