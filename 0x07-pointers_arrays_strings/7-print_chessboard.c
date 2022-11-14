@@ -1,7 +1,8 @@
 #include "main.h"
 /**
- * print_chessboard - Prints a chessboard.
- * @a: The chessboard to be printed.
+ *print_chessboard - Prints a chessboard.
+ *@a: The chessboard to be printed.
+ *Return: no return.
  */
 void print_chessboard(char (*a)[8])
 {
