@@ -1,6 +1,6 @@
-#ifndef MAIN_H
+#ifndef FILE_MAIN
 
-#define MAIN_H
+#define FILE_MAIN
 /*
  *Desc: Header file containing prototypes for all functions
  *used in the 0x04-more_functions_nested_loops directory.
