@@ -3,7 +3,7 @@
 /**
  * recursive_search - searches for a value in an array of
  * integers using the Binary search algorithm
- *
+ *Author :Lesego Winfred
  *
  * @array: input array
  * @size: size of the array
@@ -12,31 +12,31 @@
  */
 int recursive_search(int *array, size_t size, int value)
 {
-	size_t half = size / 2;
-	size_t i;
+	size_t c = size / 2;
+	size_t d;
 
 	if (array == NULL || size == 0)
 		return (-1);
 
 	printf("Searching in array");
 
-	for (i = 0; i < size; i++)
-		printf("%s %d", (i == 0) ? ":" : ",", array[i]);
+	for (d = 0; d < size; d++)
+		printf("%s %d", (d == 0) ? ":" : ",", array[d]);
 
 	printf("\n");
 
-	if (half && size % 2 == 0)
-		half--;
+	if (c && size % 2 == 0)
+		c--;
 
-	if (value == array[half])
-		return ((int)half);
+	if (value == array[c])
+		return ((int)c);
 
-	if (value < array[half])
-		return (recursive_search(array, half, value));
+	if (value < array[c])
+		return (recursive_search(array, c, value));
 
-	half++;
+	c++;
 
-	return (recursive_search(array + half, size - half, value) + half);
+	return (recursive_search(array + c, size - c, value) + c);
 }
 
 /**
